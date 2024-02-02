@@ -20,6 +20,7 @@ function Main(props) {
   const [date_info, setDate] = useState();
   const [id_info, setId] = useState();
   const [status, isModalOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   // Open the Modal
   const openModal = (id) => {
@@ -129,15 +130,15 @@ const AddBtn = styled.div`
   @media (max-width: 425px) {
     top: 100px;
   }
-`
+`;
 const Word = styled.span`
-  @media (max-width:425px){
+  @media (max-width: 425px) {
     display: none;
-
   }
 
-  @media (max-width:820px){
+  @media (max-width: 820px) {
     display: none;
-
   }
+`;
+
 export default Main;
